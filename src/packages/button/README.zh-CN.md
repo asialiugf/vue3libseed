@@ -7,7 +7,7 @@ sidebarDepth: 2
 ## 引入
 
 ```javascript
-import { Button } from 'my-lib'
+import { Button } from 'vue3libseed'
 
 Vue.creatApp().use(Button.name, Button)
 ```

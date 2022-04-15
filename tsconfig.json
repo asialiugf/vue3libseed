@@ -14,7 +14,7 @@
     "declarationDir": "dist/types",
     "outDir": "dist",
     "paths": {
-      "my-lib/*": [
+      "vue3libseed/*": [
         "./src/packages/*"
       ],
       "dist/*": [

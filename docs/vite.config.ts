@@ -6,7 +6,7 @@ import aspectRatio from 'windicss/plugin/aspect-ratio'
 const config: UserConfig = {
   resolve: {
     alias: {
-      'my-lib/': `${path.resolve(
+      'vue3libseed/': `${path.resolve(
         __dirname,
         '../dist/es'
       )}/`,

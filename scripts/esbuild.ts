@@ -38,7 +38,7 @@ async function run(options?: BuildOptions) {
     loader: { '.png': 'dataurl' },
     external: [
       'vue',
-      'my-lib/*',
+      'vue3libseed/*',
       '@vue/*',
       '@better-scroll/*',
       'jpeg-js',
@@ -54,12 +54,12 @@ async function run(options?: BuildOptions) {
  */
 async function bundle(options?: BuildOptions) {
   await build({
-    outfile: `${cwd()}/dist/es/my-lib.esm.js`,
+    outfile: `${cwd()}/dist/es/vue3libseed.esm.js`,
     bundle: true,
-    entryPoints: [`${cwd()}/src/packages/my-lib.ts`],
+    entryPoints: [`${cwd()}/src/packages/vue3libseed.ts`],
     plugins: [vue()],
     loader: { '.png': 'dataurl' },
-    external: ['vue', 'my-lib/*', '@vue/*'],
+    external: ['vue', 'vue3libseed/*', '@vue/*'],
     format: 'esm',
     minify: true,
     ...options,
@@ -100,23 +100,23 @@ async function combineCss() {
   // override bundle css
   await Promise.all([
     fs.promises.writeFile(
-      `${cwd()}/dist/es/my-lib.esm.css`,
+      `${cwd()}/dist/es/vue3libseed.esm.css`,
       content
     ),
     fs.promises.writeFile(
-      `${cwd()}/dist/lib/my-lib.umd.css`,
+      `${cwd()}/dist/lib/vue3libseed.umd.css`,
       content
     ),
   ])
 
-  const name = 'my-lib.min.css'
+  const name = 'vue3libseed.min.css'
   await Promise.all([
     fs.promises.rename(
-      `${cwd()}/dist/es/my-lib.esm.css`,
+      `${cwd()}/dist/es/vue3libseed.esm.css`,
       `${cwd()}/dist/es/${name}`
     ),
     fs.promises.rename(
-      `${cwd()}/dist/lib/my-lib.umd.css`,
+      `${cwd()}/dist/lib/vue3libseed.umd.css`,
       `${cwd()}/dist/lib/${name}`
     ),
   ])

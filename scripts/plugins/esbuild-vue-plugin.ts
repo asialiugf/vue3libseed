@@ -67,14 +67,17 @@ export default (): Plugin => {
         }
       )
       /**
-       * replace my-lib
+       * replace vue3libseed
        */
-      build.onResolve({ filter: /^my-lib\/.*/ }, (args) => {
-        return {
-          path: args.path.replace('my-lib/', '../'),
-          external: true,
+      build.onResolve(
+        { filter: /^vue3libseed\/.*/ },
+        (args) => {
+          return {
+            path: args.path.replace('vue3libseed/', '../'),
+            external: true,
+          }
         }
-      })
+      )
 
       build.onLoad(
         { filter: /\.vue$/, namespace: 'vue' },

@@ -1,5 +1,5 @@
 {
-  "name": "my-lib",
+  "name": "vue3libseed",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
@@ -25,9 +25,9 @@
     "dist",
     "src"
   ],
-  "main": "dist/lib/my-lib.umd.js",
-  "module": "dist/es/my-lib.esm.js",
-  "typings": "dist/types/my-lib.d.ts",
+  "main": "dist/lib/vue3libseed.umd.js",
+  "module": "dist/es/vue3libseed.esm.js",
+  "typings": "dist/types/vue3libseed.d.ts",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",

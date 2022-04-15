@@ -31,7 +31,7 @@ const genVueTypes = async () => {
 
   const entry = await parseComponentExports()
   const entrySourceFile = project.createSourceFile(
-    path.resolve(cwd(), 'src/packages/my-lib.ts'),
+    path.resolve(cwd(), 'src/packages/vue3libseed.ts'),
     entry,
     { overwrite: true }
   )
