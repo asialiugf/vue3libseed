@@ -23,10 +23,11 @@ Help you quickly create a component library.
 
 ## How to use
 
-[Generate a repository by vue-components-lib-seed](https://github.com/zouhangwithsweet/vue-components-lib-seed/generate)
+[Generate a repository by vue3libseed](https://github.com/asialiugf/vue3libseed/generate)
 
 ### Checklist
 
+linux or bash: `cd project-root/` and execute  `sed-i"s/old/new/g"`grep old-rl./`
 - [ ] Replace all `my-lib` words with your libary name. Just search `my-lib` and replace them in VScode
   - `.gitignore`
   - `package.json`
