@@ -27,7 +27,11 @@ Help you quickly create a component library.
 
 ### Checklist
 
-linux or bash: `cd project-root/` and execute  `sed-i"s/old/new/g"`grep old-rl./``
+linux or bash: `cd project-root/` and execute  sed-i"s/old/new/g" ...
+```ts
+cd project-root/
+sed -i "s/old/new/g" `grep old -rl ./`
+```
 - [ ] Replace all `my-lib` words with your libary name. Just search `my-lib` and replace them in VScode
   - `.gitignore`
   - `package.json`
