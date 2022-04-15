@@ -28,6 +28,12 @@
 
 ### 检查项
 
+linux or bash: `cd project-root/` and execute  sed-i"s/old/new/g" ...
+```ts
+cd project-root/
+sed -i "s/vue3libseed/new/g" `grep vue3libseed -rl ./`
+```
+
 - [ ] Replace all `vue3libseed` words with your libary name. Just search `vue3libseed` and replace them in VScode
   - `.gitignore`
   - `package.json`
